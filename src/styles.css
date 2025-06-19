@@ -1,1 +1,170 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* KBank Theme Variables */
+:root {
+  /* KBank Primary Colors */
+  --kbank-green: #138f2d;
+  --kbank-dark-green: #0f6b23;
+  --kbank-light-green: #4caf50;
+  --kbank-gold: #ffc107;
+  --kbank-dark-gold: #f57c00;
+  
+  /* Neutral Colors */
+  --kbank-white: #ffffff;
+  --kbank-light-gray: #f5f5f5;
+  --kbank-gray: #9e9e9e;
+  --kbank-dark-gray: #424242;
+  --kbank-black: #212121;
+  
+  /* Gradient */
+  --kbank-gradient: linear-gradient(135deg, var(--kbank-green) 0%, var(--kbank-dark-green) 100%);
+  --kbank-gold-gradient: linear-gradient(135deg, var(--kbank-gold) 0%, var(--kbank-dark-gold) 100%);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', 'Arial', sans-serif;
+  background-color: var(--kbank-light-gray);
+  color: var(--kbank-dark-gray);
+  line-height: 1.6;
+}
+
+/* KBank Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--kbank-green);
+  font-weight: 600;
+}
+
+.kbank-primary-color {
+  color: var(--kbank-green);
+}
+
+.kbank-gold-color {
+  color: var(--kbank-gold);
+}
+
+/* KBank Button Styles */
+.kbank-btn-primary {
+  background: var(--kbank-gradient);
+  color: var(--kbank-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(19, 143, 45, 0.3);
+}
+
+.kbank-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(19, 143, 45, 0.4);
+}
+
+.kbank-btn-secondary {
+  background: transparent;
+  color: var(--kbank-green);
+  border: 2px solid var(--kbank-green);
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.kbank-btn-secondary:hover {
+  background: var(--kbank-green);
+  color: var(--kbank-white);
+  transform: translateY(-2px);
+}
+
+.kbank-btn-gold {
+  background: var(--kbank-gold-gradient);
+  color: var(--kbank-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.kbank-btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+}
+
+/* KBank Card Styles */
+.kbank-card {
+  background: var(--kbank-white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(19, 143, 45, 0.1);
+  transition: all 0.3s ease;
+}
+
+.kbank-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* KBank Header Styles */
+.kbank-header {
+  background: var(--kbank-gradient);
+  color: var(--kbank-white);
+  padding: 16px 0;
+  box-shadow: 0 4px 12px rgba(19, 143, 45, 0.2);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
