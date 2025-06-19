@@ -14,10 +14,5 @@
       "src": "/(.*)",
       "dest": "/dist/hello-angular-app/server/server.mjs"
     }
-  ],
-  "functions": {
-    "dist/hello-angular-app/server/server.mjs": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  ]
 }
