@@ -1,9 +1,93 @@
-<!-- Hello World Angular App -->
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-  <div class="text-center">
-    <h1 class="text-6xl font-bold text-blue-600 mb-4">Hello World!</h1>
-    <p class="text-xl text-gray-600">Welcome to your Angular application</p>
-  </div>
+<!-- PayWise App -->
+<div class="min-h-screen bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="bg-gray-800 border-b border-gray-700">
+    <div class="max-w-4xl mx-auto px-4 py-4">
+      <h1 class="text-2xl font-bold text-blue-400">PayWise</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Balance Card -->
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-8">
+      <p class="text-blue-100 text-sm mb-2">Available Balance</p>
+      <h2 class="text-4xl font-bold text-white">฿82,500.50</h2>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="grid grid-cols-2 gap-4 mb-8">
+      <button class="bg-blue-600 hover:bg-blue-700 rounded-xl p-4 text-center transition-colors">
+        <div class="text-2xl mb-2">💸</div>
+        <div class="font-semibold">Send Money</div>
+        <div class="text-sm text-blue-200">Transfer to friends</div>
+      </button>
+      <button class="bg-gray-800 hover:bg-gray-700 rounded-xl p-4 text-center transition-colors">
+        <div class="text-2xl mb-2">📊</div>
+        <div class="font-semibold">History</div>
+        <div class="text-sm text-gray-400">View transactions</div>
+      </button>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="bg-gray-800 rounded-2xl p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold">Recent Activity</h3>
+        <button class="text-blue-400 hover:text-blue-300 text-sm">View All</button>
+      </div>
+
+      <!-- Transaction List -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-4 bg-gray-700 rounded-xl">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-sm font-semibold">
+              JD
+            </div>
+            <div>
+              <div class="font-medium">John Doe</div>
+              <div class="text-sm text-gray-400">&#64;johndoe</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-red-400 font-semibold">-฿5,000.00</div>
+            <div class="text-xs text-gray-400">2024-01-15</div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-700 rounded-xl">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-sm font-semibold">
+              SW
+            </div>
+            <div>
+              <div class="font-medium">Sarah Wilson</div>
+              <div class="text-sm text-gray-400">&#64;sarahw</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-green-400 font-semibold">+฿2,500.00</div>
+            <div class="text-xs text-gray-400">2024-01-14</div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-700 rounded-xl">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-sm font-semibold">
+              MC
+            </div>
+            <div>
+              <div class="font-medium">Mike Chen</div>
+              <div class="text-sm text-gray-400">&#64;mikechen</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-red-400 font-semibold">-฿6,800.00</div>
+            <div class="text-xs text-gray-400">2024-01-13</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
 
 <router-outlet />
