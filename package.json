@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:vercel": "ng build && npm run build:ssr-bundle",
+    "build:ssr-bundle": "node dist/hello-angular-app/server/server.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:hello-angular-app": "node dist/hello-angular-app/server/server.mjs"
